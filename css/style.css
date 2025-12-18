@@ -1429,10 +1429,15 @@ img {
 }
 
 .about-card-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 1rem;
     background: var(--off-white);
     border-radius: var(--radius);
+    gap: 0.25rem;
 }
 
 .about-card-stat-number {
@@ -1440,6 +1445,52 @@ img {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--navy);
+    line-height: 1;
+}
+
+.about-card-stat-number:empty {
+    display: none;
+}
+
+/* Quand la case n'a pas de number, le label devient le titre */
+.about-card-stat:not(:has(.about-card-stat-number)) .about-card-stat-label,
+.about-card-stat-number:empty + .about-card-stat-label {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.stat-icon {
+    color: var(--orange);
+    flex-shrink: 0;
+    margin-bottom: 0.35rem;
+    width: 24px;
+    height: 24px;
+}
+
+/* About Card Expertise */
+.about-card-expertise {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.expertise-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    background: var(--off-white);
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+.expertise-item svg {
+    color: var(--orange);
+    flex-shrink: 0;
 }
 
 .about-card-stat-number span {
