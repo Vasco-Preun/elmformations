@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Formation Assistante Secrétaire - Bientôt disponible | ELM Formations</title>
+    <meta name="description" content="Formation Assistante Secrétaire bientôt disponible chez ELM Formations. Inscrivez-vous à notre liste d'attente pour être informé du lancement.">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .coming-soon-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 80px;
+        }
+        
+        .coming-soon-hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: calc(100vh - 80px);
+        }
+        
+        .coming-soon-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 50%);
+            animation: pulse-slow 8s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        
+        .coming-soon-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+        }
+        
+        .coming-soon-icon {
+            width: 100px;
+            height: 100px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .coming-soon-icon svg {
+            width: 50px;
+            height: 50px;
+            stroke: white;
+        }
+        
+        .coming-soon-badge {
+            display: inline-block;
+            background: var(--navy);
+            color: white;
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 1.5rem;
+        }
+        
+        .coming-soon-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+        
+        .coming-soon-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+        
+        .coming-soon-info {
+            background: rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        
+        .coming-soon-info p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+        
+        .coming-soon-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .coming-soon-buttons .btn {
+            padding: 1rem 2rem;
+        }
+        
+        .coming-soon-buttons .btn-white {
+            background: white;
+            color: var(--orange-dark);
+        }
+        
+        .coming-soon-buttons .btn-white:hover {
+            background: var(--off-white);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">
+                <img src="Images/Logo-ELM.png" alt="ELM Formations" class="logo-img">
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-dropdown">
+                    <a href="index.html" class="nav-link nav-dropdown-toggle">Accueil</a>
+                    <div class="nav-mega-menu nav-mega-single">
+                        <a href="index.html" class="nav-mega-item">
+                            <div class="nav-page-preview">
+                                <div class="preview-header">
+                                    <div class="preview-logo"></div>
+                                    <div class="preview-nav-items"><span></span><span></span><span></span></div>
+                                </div>
+                                <div class="preview-hero preview-hero-accueil">
+                                    <div class="preview-badge"></div>
+                                    <div class="preview-title-large">ELM Formations</div>
+                                    <div class="preview-subtitle"></div>
+                                    <div class="preview-buttons"><span class="preview-btn-primary"></span><span class="preview-btn-secondary"></span></div>
+                                </div>
+                                <div class="preview-section">
+                                    <div class="preview-cards-row"><div class="preview-card-mini"></div><div class="preview-card-mini"></div><div class="preview-card-mini"></div></div>
+                                </div>
+                            </div>
+                            <div class="nav-mega-info"><span class="nav-mega-title">Page d'accueil</span><span class="nav-mega-desc">Découvrir ELM Formations</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <span class="nav-link nav-dropdown-toggle active">
+                        Formations
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </span>
+                    <div class="nav-dropdown-menu">
+                        <a href="formation-taxi.html" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon nav-dropdown-icon-taxi">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M5 17h14v-5H5v5z"/>
+                                    <path d="M19 12l-1-5H6L5 12"/>
+                                    <circle cx="7.5" cy="17" r="1.5"/>
+                                    <circle cx="16.5" cy="17" r="1.5"/>
+                                </svg>
+                            </span>
+                            Formation Taxi
+                        </a>
+                        <a href="formation-assistante.html" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon nav-dropdown-icon-assistante">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </span>
+                            Assistante Secrétaire
+                        </a>
+                        <a href="formation-community.html" class="nav-dropdown-item">
+                            <span class="nav-dropdown-icon nav-dropdown-icon-community">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 00-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 010 7.75"/>
+                                </svg>
+                            </span>
+                            Community Management
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <a href="equipe.html" class="nav-link nav-dropdown-toggle">Notre équipe et nos valeurs</a>
+                    <div class="nav-mega-menu nav-mega-single">
+                        <a href="equipe.html" class="nav-mega-item">
+                            <div class="nav-page-preview">
+                                <div class="preview-header">
+                                    <div class="preview-logo"></div>
+                                    <div class="preview-nav-items"><span></span><span></span><span></span></div>
+                                </div>
+                                <div class="preview-hero preview-hero-equipe">
+                                    <div class="preview-badge-light"></div>
+                                    <div class="preview-title-medium">Notre Équipe</div>
+                                    <div class="preview-subtitle-light"></div>
+                                </div>
+                                <div class="preview-section preview-section-light">
+                                    <div class="preview-stats-row">
+                                        <div class="preview-stat"><span class="preview-stat-num">10+</span><span class="preview-stat-label"></span></div>
+                                        <div class="preview-stat"><span class="preview-stat-num">3</span><span class="preview-stat-label"></span></div>
+                                        <div class="preview-stat"><span class="preview-stat-num">100%</span><span class="preview-stat-label"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-mega-info"><span class="nav-mega-title">Notre équipe et nos valeurs</span><span class="nav-mega-desc">Formateurs experts passionnés</span></div>
+                        </a>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn btn-primary btn-sm">
+                    S'inscrire
+                </a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="coming-soon-page">
+        <div class="coming-soon-hero">
+            <div class="coming-soon-content">
+                <div class="coming-soon-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <span class="coming-soon-badge">Bientôt disponible</span>
+                <h1 class="coming-soon-title">Assistante<br>Secrétaire</h1>
+                <p class="coming-soon-subtitle">Notre formation aux métiers du secrétariat et de l'assistanat administratif est en cours de préparation. Un programme complet pour maîtriser toutes les compétences du métier.</p>
+                
+                <div class="coming-soon-buttons">
+                    <a href="index.html" class="btn btn-white">
+                        Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">ELM Formations</a>
+                    <p>Organisme de formation professionnelle certifié Qualiopi.<br>Sur la route de votre avenir.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Accueil</a>
+                    <a href="formation-community.html">Formations</a>
+                    <a href="contact-form.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Formations</h4>
+                    <a href="formation-taxi.html">Formation Taxi</a>
+                    <a href="formation-assistante.html">Assistante Secrétaire</a>
+                    <a href="formation-community.html">Community Management</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <p>3 Place du marché<br>Centre Commerce<br>78280 Guyancourt</p>
+                    <a href="mailto:contact@elmformations.fr">contact@elmformations.fr</a>
+                    <a href="tel:+33659295456">+33 6 59 29 54 56</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="qualiopi-badge-logo">
+                    <img src="images/qualiopi.png" alt="Certification Qualiopi" class="qualiopi-footer-logo">
+                </div>
+                <p>© 2024 ELM Formations. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="mentions-legales.html">Mentions légales</a>
+                    <a href="confidentialite.html">Confidentialité</a>
+                </div>
+                <a href="https://nexuscircle.fr" target="_blank" rel="noopener noreferrer" class="footer-credit">
+                    <span>Site réalisé par Nexus Circle</span>
+                    <img src="Images/Logo Nexus Circle.png" alt="Nexus Circle - Agence de Marketing d'Influence" class="footer-credit-logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
