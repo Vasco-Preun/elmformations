@@ -1928,10 +1928,21 @@ img {
     transition: all 0.3s ease;
 }
 
+.footer-social a svg {
+    width: 20px;
+    height: 20px;
+    fill: rgba(255, 255, 255, 0.8);
+    flex-shrink: 0;
+}
+
 .footer-social a:hover {
     background: var(--orange);
     color: var(--white);
     transform: translateY(-2px);
+}
+
+.footer-social a:hover svg {
+    fill: var(--white);
 }
 
 .footer-links h4 {
