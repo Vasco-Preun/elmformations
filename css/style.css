@@ -1,3 +1,12 @@
+/* ===== Custom Fonts ===== */
+@font-face {
+    font-family: 'Angst';
+    src: url('../fonts/angst-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ===== Variables ===== */
 :root {
     --white: #ffffff;
@@ -195,7 +204,7 @@
 
 @media (max-width: 768px) {
     .top-bar {
-        padding: 0.625rem 0;
+        padding: 0.5rem 0;
     }
     
     .top-bar-content {
@@ -203,6 +212,7 @@
         font-size: 0.75rem;
     }
     
+    /* Cacher l'adresse sur tablette */
     .top-bar-item:last-child,
     .top-bar-separator:last-of-type {
         display: none;
@@ -213,14 +223,39 @@
     }
 }
 
-@media (max-width: 480px) {
-    .top-bar-content {
-        flex-direction: column;
-        gap: 0.5rem;
+@media (max-width: 576px) {
+    .top-bar {
+        padding: 0.4rem 0;
     }
     
+    .top-bar-content {
+        justify-content: center;
+        gap: 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    /* Afficher seulement téléphone et email */
     .top-bar-item:last-child {
-        display: flex;
+        display: none;
+    }
+    
+    .top-bar-separator {
+        display: inline;
+    }
+    
+    .top-bar-separator:last-of-type {
+        display: none;
+    }
+    
+    .header {
+        top: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Afficher seulement le téléphone */
+    .top-bar-item:not(:first-child) {
+        display: none;
     }
     
     .top-bar-separator {
@@ -228,7 +263,7 @@
     }
     
     .header {
-        top: 70px;
+        top: 26px;
     }
 }
 
@@ -1157,14 +1192,14 @@ img {
 }
 
 .hero-slogan {
-    font-family: 'Cinzel', Georgia, serif;
-    font-size: clamp(1.25rem, 3vw, 1.75rem);
-    font-weight: 400;
+    font-family: 'Angst', Georgia, serif;
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+    font-weight: normal;
     font-style: normal;
     color: var(--orange);
     margin-bottom: 1rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-transform: none;
 }
 
 .hero-location {
@@ -2550,11 +2585,19 @@ img {
 .qualiopi-badge-logo {
     display: flex;
     align-items: center;
+    margin-left: 100px;
 }
 
 .qualiopi-footer-logo {
     height: 50px;
     width: auto;
+}
+
+@media (max-width: 768px) {
+    .qualiopi-badge-logo {
+        margin-left: 0;
+        margin-bottom: 80px;
+    }
 }
 
 .sidebar-card-qualiopi {
