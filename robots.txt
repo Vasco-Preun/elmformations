@@ -1,0 +1,27 @@
+# robots.txt - ELM Formations
+# Centre de formation professionnelle certifié Qualiopi à Guyancourt (78)
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://elmformations.fr/sitemap.xml
+
+# Optimisation crawl
+Crawl-delay: 1
+
+# Pages importantes
+Allow: /index.html
+Allow: /formation-community.html
+Allow: /formation-tcf-tout-public-a2.html
+Allow: /formation-chauffeur-vtc.html
+Allow: /contact.html
+Allow: /equipe.html
+
+# Fichiers statiques
+Allow: /css/
+Allow: /js/
+Allow: /Images/
+
+
+
